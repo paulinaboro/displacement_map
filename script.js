@@ -17,15 +17,15 @@ let sourceData;
 const mapCanvas = document.getElementById("mapCanvas");
 const mapContext = mapCanvas.getContext("2d");
 let mapData;
-let MAX_MOVEMENT = 8;
+let MAX_MOVEMENT = 5;
 
 
 function init() {
     img = new Image();
-    img.src = "cat.jpg";
+    img.src = "koala.jpg";
 
     mapImg = new Image();
-    mapImg.src = "map.jpg";
+    mapImg.src = "map_koala.jpg";
     img.addEventListener("load", drawImgToCanvas);
     mapImg.addEventListener("load", drawMapToCanvas);
 
